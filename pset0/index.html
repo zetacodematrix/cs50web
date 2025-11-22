@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS50W — Project 0</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
     <header>
@@ -16,19 +14,23 @@
     </header>
 
     <main class="container">
+
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q" autofocus>
+            <div>
+                <button type="submit">Google Search</button>
+                <button type="submit" name="btnI">I'm Feeling Lucky</button>
+            </div>
+        </form>
+
         <nav>
             <ul>
                 <li><a href="images.html">Images Search</a></li>
                 <li><a href="advanced.html">Advanced Search</a></li>
             </ul>
         </nav>
-        <form action="https://www.google.com/search" method="get">
-            <input type="text" name="q" autofocus>
-            <button type="submit">Google Search</button>
-        </form>
 
     </main>
 
 </body>
-
 </html>
