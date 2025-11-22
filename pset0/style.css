@@ -13,6 +13,13 @@ body {
     padding: 20px;
 }
 
+/* Centered layout container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* Header */
 header {
     text-align: center;
@@ -29,7 +36,49 @@ header p {
     color: #555;
 }
 
+/* Search form */
+main form {
+    margin-bottom: 30px;
+}
+
+main form input[type="text"] {
+    width: 100%;
+    max-width: 480px;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 24px;
+    outline: none;
+}
+
+main form input[type="text"]:focus {
+    border-color: #a0a0a0;
+}
+
+/* Buttons */
+main form div {
+    margin-top: 16px;
+}
+
+main form button {
+    padding: 8px 16px;
+    margin: 0 4px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background: #f8f9fa;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+main form button:hover {
+    border-color: #c6c6c6;
+}
+
 /* Navigation links */
+nav {
+    margin-top: 24px;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -40,15 +89,9 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #1a0dab;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 nav a:hover {
     text-decoration: underline;
-}
-
-/* General container (use in forms or search bars) */
-.container {
-    max-width: 600px;
-    margin: 0 auto;
 }
