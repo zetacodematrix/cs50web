@@ -3,34 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS50W — Project 0</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CS50W — Project 0: Search</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>CS50W — Web Programming</h1>
-        <p>Project 0: Search</p>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="branding">
+                <h1 class="site-title">CS50W — Project 0</h1>
+                <p class="site-subtitle">Search</p>
+            </div>
+            <nav class="header-nav" aria-label="Project links">
+                <a href="images.html">Images</a>
+                <a href="advanced.html">Advanced</a>
+            </nav>
+        </div>
     </header>
 
-    <main class="container">
+    <main class="search-main">
+        <section class="search-panel" aria-labelledby="search-heading">
+            <h2 id="search-heading" class="sr-only">Web search</h2>
 
-        <form action="https://www.google.com/search" method="get">
-            <input type="text" name="q" autofocus>
-            <div>
-                <button type="submit">Google Search</button>
-                <button type="submit" name="btnI">I'm Feeling Lucky</button>
-            </div>
-        </form>
+            <form action="https://www.google.com/search" method="get" class="search-form">
+                <label for="search-input" class="sr-only">Search query</label>
+                <div class="search-input-wrapper">
+                    <input
+                        id="search-input"
+                        type="text"
+                        name="q"
+                        autocomplete="off"
+                        required
+                        placeholder="Search the web..."
+                    >
+                </div>
 
-        <nav>
-            <ul>
-                <li><a href="images.html">Images Search</a></li>
-                <li><a href="advanced.html">Advanced Search</a></li>
-            </ul>
-        </nav>
-
+                <div class="search-actions">
+                    <button type="submit" class="btn-primary">Google Search</button>
+                    <button type="submit" name="btnI" class="btn-secondary">I'm Feeling Lucky</button>
+                </div>
+            </form>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <p>CS50W · Project 0: Search</p>
+    </footer>
 
 </body>
 </html>
