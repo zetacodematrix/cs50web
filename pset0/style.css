@@ -154,12 +154,13 @@ body {
 /* Primary vs secondary button styling */
 .btn-primary {
     background-color: var(--accent);
-    color: #fff;
+    color: var(--text-main);
     border-color: var(--accent);
 }
 
 .btn-primary:hover {
     background-color: var(--accent-dark);
+    color: #fff;
 }
 
 .btn-secondary {
