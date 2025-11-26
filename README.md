@@ -1,9 +1,8 @@
 # CS50W — Web Programming with Python and JavaScript  
-A concise, portfolio-ready implementation of the projects from Harvard’s CS50W.
+A concise implementation of the projects from Harvard’s CS50W.
 
 ## Overview  
-This repository contains clean, incremental solutions to all CS50W projects.  
-Each section is documented with clear structure, atomic commits, and consistent design choices.
+This repository contains clean, incremental solutions to CS50W projects.  
 
 ## Current Work  
 **Project 0 — Search**  
@@ -16,11 +15,6 @@ Each section is documented with clear structure, atomic commits, and consistent 
 - Project 3: Mail  
 - Project 4: Network  
 - Final Project
-
-## Workflow  
-- One file committed at a time for clarity  
-- Descriptive commit messages  
-- Documentation kept concise and structured  
 
 ## Skills Demonstrated  
 - HTML, CSS, JavaScript  
