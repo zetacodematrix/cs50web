@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS50W — Project 0: Image Search</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header class="site-header">
@@ -26,22 +28,16 @@
             <h2 id="search-heading" class="sr-only">Image search</h2>
 
             <form action="https://www.google.com/search" method="get" class="search-form">
-                <label for="search-input" class="sr-only">Search query</label>
+                <input type="hidden" name="tbm" value="isch">Search query</label>
                 <div class="search-input-wrapper">
-                    <input
-                        id="search-input"
-                        type="text"
-                        name="q"
-                        autocomplete="off"
-                        required
-                        placeholder="Search for images..."
-                    >
+                    <input id="search-input" type="text" name="q" autocomplete="off" required
+                        placeholder="Search for images...">
                 </div>
 
                 <div class="search-actions">
-                    <button type="submit" class="btn-primary">Google Search</button>
-                    <button type="submit" name="btnI" class="btn-secondary">I'm Feeling Lucky</button>
+                    <button type="submit" class="btn-primary">Image Search</button>
                 </div>
+
             </form>
         </section>
     </main>
@@ -51,4 +47,5 @@
     </footer>
 
 </body>
+
 </html>
